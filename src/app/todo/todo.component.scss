@@ -1,0 +1,55 @@
+.todo-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  h2 {
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    margin-bottom: 1rem;
+
+    input {
+      flex: 1;
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #eee;
+
+      &.completed span {
+        text-decoration: line-through;
+        color: #888;
+      }
+
+      input[type='checkbox'] {
+        margin-right: 0.5rem;
+      }
+
+      button {
+        background-color: transparent;
+        border: none;
+        color: red;
+        cursor: pointer;
+      }
+    }
+  }
+}

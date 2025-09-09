@@ -1,0 +1,20 @@
+<p>greetings works!</p>
+<p>{{ message() }}</p>
+
+<input 
+  type="text" 
+  placeholder="Enter your name" 
+  (input)="onInputChange($event, 'typedText')" 
+  (keyup.enter)="onEnter()"
+/>
+<p>You typed: {{ typedText }}</p>
+
+<input 
+  type="text" 
+  placeholder="Enter your last name" 
+  (input)="onInputChange($event, 'lastname')" 
+/>
+<p>You typed last name: {{ lastname }}</p>
+
+<br>
+<button (click)="onClick()">Click me</button>

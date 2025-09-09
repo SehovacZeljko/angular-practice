@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #333;
+  color: #fff;
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .nav {
+    display: flex;
+    gap: 1rem;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+
+      &.active {
+        border-bottom: 2px solid #fff;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
