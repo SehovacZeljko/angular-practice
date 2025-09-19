@@ -4,9 +4,9 @@ import { TodoComponent } from './todo/todo.component';
 
 
 export const routes: Routes = [
- { path: '', redirectTo: 'home', pathMatch: 'full' }, // default route
-  { path: 'home', component: HomeComponent },
-  {path:'todo', component:TodoComponent},
-  { path: '**', redirectTo: 'home' } // wildcard for unknown routes
+  { path: '', redirectTo: 'home', pathMatch: 'full', title:'Home' }, // default route
+  { path: 'home', component: HomeComponent, title:'Home' },
+  { path:'todo', component:TodoComponent, title:'ToDo'},
+  { path: '**', redirectTo: 'home', title:'Home' } // wildcard for unknown routes
 
 ];
